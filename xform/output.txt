@@ -1,0 +1,1658 @@
+gcc -std=c99 -o xform xform.c
+xform.c: In function ‘mulmatmat4f’:
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:20:16: note: in expansion of macro ‘M_ROW’
+  rm[0] = dot4f(M_ROW(a,0), M_COL(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:20:16: note: in expansion of macro ‘M_ROW’
+  rm[0] = dot4f(M_ROW(a,0), M_COL(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:20:16: note: in expansion of macro ‘M_ROW’
+  rm[0] = dot4f(M_ROW(a,0), M_COL(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:20:16: note: in expansion of macro ‘M_ROW’
+  rm[0] = dot4f(M_ROW(a,0), M_COL(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:20:28: note: in expansion of macro ‘M_COL’
+  rm[0] = dot4f(M_ROW(a,0), M_COL(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:20:28: note: in expansion of macro ‘M_COL’
+  rm[0] = dot4f(M_ROW(a,0), M_COL(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:20:28: note: in expansion of macro ‘M_COL’
+  rm[0] = dot4f(M_ROW(a,0), M_COL(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:20:28: note: in expansion of macro ‘M_COL’
+  rm[0] = dot4f(M_ROW(a,0), M_COL(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:21:16: note: in expansion of macro ‘M_ROW’
+  rm[1] = dot4f(M_ROW(a,1), M_COL(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:21:16: note: in expansion of macro ‘M_ROW’
+  rm[1] = dot4f(M_ROW(a,1), M_COL(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:21:16: note: in expansion of macro ‘M_ROW’
+  rm[1] = dot4f(M_ROW(a,1), M_COL(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:21:16: note: in expansion of macro ‘M_ROW’
+  rm[1] = dot4f(M_ROW(a,1), M_COL(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:21:28: note: in expansion of macro ‘M_COL’
+  rm[1] = dot4f(M_ROW(a,1), M_COL(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:21:28: note: in expansion of macro ‘M_COL’
+  rm[1] = dot4f(M_ROW(a,1), M_COL(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:21:28: note: in expansion of macro ‘M_COL’
+  rm[1] = dot4f(M_ROW(a,1), M_COL(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:21:28: note: in expansion of macro ‘M_COL’
+  rm[1] = dot4f(M_ROW(a,1), M_COL(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:22:16: note: in expansion of macro ‘M_ROW’
+  rm[2] = dot4f(M_ROW(a,2), M_COL(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:22:16: note: in expansion of macro ‘M_ROW’
+  rm[2] = dot4f(M_ROW(a,2), M_COL(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:22:16: note: in expansion of macro ‘M_ROW’
+  rm[2] = dot4f(M_ROW(a,2), M_COL(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:22:16: note: in expansion of macro ‘M_ROW’
+  rm[2] = dot4f(M_ROW(a,2), M_COL(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:22:28: note: in expansion of macro ‘M_COL’
+  rm[2] = dot4f(M_ROW(a,2), M_COL(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:22:28: note: in expansion of macro ‘M_COL’
+  rm[2] = dot4f(M_ROW(a,2), M_COL(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:22:28: note: in expansion of macro ‘M_COL’
+  rm[2] = dot4f(M_ROW(a,2), M_COL(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:22:28: note: in expansion of macro ‘M_COL’
+  rm[2] = dot4f(M_ROW(a,2), M_COL(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:23:16: note: in expansion of macro ‘M_ROW’
+  rm[3] = dot4f(M_ROW(a,3), M_COL(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:23:16: note: in expansion of macro ‘M_ROW’
+  rm[3] = dot4f(M_ROW(a,3), M_COL(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:23:16: note: in expansion of macro ‘M_ROW’
+  rm[3] = dot4f(M_ROW(a,3), M_COL(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:23:16: note: in expansion of macro ‘M_ROW’
+  rm[3] = dot4f(M_ROW(a,3), M_COL(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:23:28: note: in expansion of macro ‘M_COL’
+  rm[3] = dot4f(M_ROW(a,3), M_COL(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:23:28: note: in expansion of macro ‘M_COL’
+  rm[3] = dot4f(M_ROW(a,3), M_COL(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:23:28: note: in expansion of macro ‘M_COL’
+  rm[3] = dot4f(M_ROW(a,3), M_COL(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:23:28: note: in expansion of macro ‘M_COL’
+  rm[3] = dot4f(M_ROW(a,3), M_COL(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:25:16: note: in expansion of macro ‘M_ROW’
+  rm[4] = dot4f(M_ROW(a,0), M_COL(b,1));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:25:16: note: in expansion of macro ‘M_ROW’
+  rm[4] = dot4f(M_ROW(a,0), M_COL(b,1));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:25:16: note: in expansion of macro ‘M_ROW’
+  rm[4] = dot4f(M_ROW(a,0), M_COL(b,1));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:25:16: note: in expansion of macro ‘M_ROW’
+  rm[4] = dot4f(M_ROW(a,0), M_COL(b,1));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:25:28: note: in expansion of macro ‘M_COL’
+  rm[4] = dot4f(M_ROW(a,0), M_COL(b,1));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:25:28: note: in expansion of macro ‘M_COL’
+  rm[4] = dot4f(M_ROW(a,0), M_COL(b,1));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:25:28: note: in expansion of macro ‘M_COL’
+  rm[4] = dot4f(M_ROW(a,0), M_COL(b,1));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:25:28: note: in expansion of macro ‘M_COL’
+  rm[4] = dot4f(M_ROW(a,0), M_COL(b,1));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:26:16: note: in expansion of macro ‘M_ROW’
+  rm[5] = dot4f(M_ROW(a,1), M_COL(b,1));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:26:16: note: in expansion of macro ‘M_ROW’
+  rm[5] = dot4f(M_ROW(a,1), M_COL(b,1));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:26:16: note: in expansion of macro ‘M_ROW’
+  rm[5] = dot4f(M_ROW(a,1), M_COL(b,1));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:26:16: note: in expansion of macro ‘M_ROW’
+  rm[5] = dot4f(M_ROW(a,1), M_COL(b,1));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:26:28: note: in expansion of macro ‘M_COL’
+  rm[5] = dot4f(M_ROW(a,1), M_COL(b,1));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:26:28: note: in expansion of macro ‘M_COL’
+  rm[5] = dot4f(M_ROW(a,1), M_COL(b,1));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:26:28: note: in expansion of macro ‘M_COL’
+  rm[5] = dot4f(M_ROW(a,1), M_COL(b,1));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:26:28: note: in expansion of macro ‘M_COL’
+  rm[5] = dot4f(M_ROW(a,1), M_COL(b,1));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:27:16: note: in expansion of macro ‘M_ROW’
+  rm[6] = dot4f(M_ROW(a,2), M_COL(b,1));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:27:16: note: in expansion of macro ‘M_ROW’
+  rm[6] = dot4f(M_ROW(a,2), M_COL(b,1));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:27:16: note: in expansion of macro ‘M_ROW’
+  rm[6] = dot4f(M_ROW(a,2), M_COL(b,1));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:27:16: note: in expansion of macro ‘M_ROW’
+  rm[6] = dot4f(M_ROW(a,2), M_COL(b,1));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:27:28: note: in expansion of macro ‘M_COL’
+  rm[6] = dot4f(M_ROW(a,2), M_COL(b,1));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:27:28: note: in expansion of macro ‘M_COL’
+  rm[6] = dot4f(M_ROW(a,2), M_COL(b,1));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:27:28: note: in expansion of macro ‘M_COL’
+  rm[6] = dot4f(M_ROW(a,2), M_COL(b,1));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:27:28: note: in expansion of macro ‘M_COL’
+  rm[6] = dot4f(M_ROW(a,2), M_COL(b,1));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:28:16: note: in expansion of macro ‘M_ROW’
+  rm[7] = dot4f(M_ROW(a,3), M_COL(b,1));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:28:16: note: in expansion of macro ‘M_ROW’
+  rm[7] = dot4f(M_ROW(a,3), M_COL(b,1));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:28:16: note: in expansion of macro ‘M_ROW’
+  rm[7] = dot4f(M_ROW(a,3), M_COL(b,1));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:28:16: note: in expansion of macro ‘M_ROW’
+  rm[7] = dot4f(M_ROW(a,3), M_COL(b,1));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:28:28: note: in expansion of macro ‘M_COL’
+  rm[7] = dot4f(M_ROW(a,3), M_COL(b,1));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:28:28: note: in expansion of macro ‘M_COL’
+  rm[7] = dot4f(M_ROW(a,3), M_COL(b,1));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:28:28: note: in expansion of macro ‘M_COL’
+  rm[7] = dot4f(M_ROW(a,3), M_COL(b,1));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:28:28: note: in expansion of macro ‘M_COL’
+  rm[7] = dot4f(M_ROW(a,3), M_COL(b,1));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:30:16: note: in expansion of macro ‘M_ROW’
+  rm[8] = dot4f(M_ROW(a,0), M_COL(b,2));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:30:16: note: in expansion of macro ‘M_ROW’
+  rm[8] = dot4f(M_ROW(a,0), M_COL(b,2));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:30:16: note: in expansion of macro ‘M_ROW’
+  rm[8] = dot4f(M_ROW(a,0), M_COL(b,2));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:30:16: note: in expansion of macro ‘M_ROW’
+  rm[8] = dot4f(M_ROW(a,0), M_COL(b,2));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:30:28: note: in expansion of macro ‘M_COL’
+  rm[8] = dot4f(M_ROW(a,0), M_COL(b,2));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:30:28: note: in expansion of macro ‘M_COL’
+  rm[8] = dot4f(M_ROW(a,0), M_COL(b,2));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:30:28: note: in expansion of macro ‘M_COL’
+  rm[8] = dot4f(M_ROW(a,0), M_COL(b,2));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:30:28: note: in expansion of macro ‘M_COL’
+  rm[8] = dot4f(M_ROW(a,0), M_COL(b,2));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:31:16: note: in expansion of macro ‘M_ROW’
+  rm[9] = dot4f(M_ROW(a,1), M_COL(b,2));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:31:16: note: in expansion of macro ‘M_ROW’
+  rm[9] = dot4f(M_ROW(a,1), M_COL(b,2));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:31:16: note: in expansion of macro ‘M_ROW’
+  rm[9] = dot4f(M_ROW(a,1), M_COL(b,2));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:31:16: note: in expansion of macro ‘M_ROW’
+  rm[9] = dot4f(M_ROW(a,1), M_COL(b,2));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:31:28: note: in expansion of macro ‘M_COL’
+  rm[9] = dot4f(M_ROW(a,1), M_COL(b,2));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:31:28: note: in expansion of macro ‘M_COL’
+  rm[9] = dot4f(M_ROW(a,1), M_COL(b,2));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:31:28: note: in expansion of macro ‘M_COL’
+  rm[9] = dot4f(M_ROW(a,1), M_COL(b,2));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:31:28: note: in expansion of macro ‘M_COL’
+  rm[9] = dot4f(M_ROW(a,1), M_COL(b,2));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:32:17: note: in expansion of macro ‘M_ROW’
+  rm[10] = dot4f(M_ROW(a,2), M_COL(b,2));
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:32:17: note: in expansion of macro ‘M_ROW’
+  rm[10] = dot4f(M_ROW(a,2), M_COL(b,2));
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:32:17: note: in expansion of macro ‘M_ROW’
+  rm[10] = dot4f(M_ROW(a,2), M_COL(b,2));
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:32:17: note: in expansion of macro ‘M_ROW’
+  rm[10] = dot4f(M_ROW(a,2), M_COL(b,2));
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:32:29: note: in expansion of macro ‘M_COL’
+  rm[10] = dot4f(M_ROW(a,2), M_COL(b,2));
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:32:29: note: in expansion of macro ‘M_COL’
+  rm[10] = dot4f(M_ROW(a,2), M_COL(b,2));
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:32:29: note: in expansion of macro ‘M_COL’
+  rm[10] = dot4f(M_ROW(a,2), M_COL(b,2));
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:32:29: note: in expansion of macro ‘M_COL’
+  rm[10] = dot4f(M_ROW(a,2), M_COL(b,2));
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:33:17: note: in expansion of macro ‘M_ROW’
+  rm[11] = dot4f(M_ROW(a,3), M_COL(b,2)); 
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:33:17: note: in expansion of macro ‘M_ROW’
+  rm[11] = dot4f(M_ROW(a,3), M_COL(b,2)); 
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:33:17: note: in expansion of macro ‘M_ROW’
+  rm[11] = dot4f(M_ROW(a,3), M_COL(b,2)); 
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:33:17: note: in expansion of macro ‘M_ROW’
+  rm[11] = dot4f(M_ROW(a,3), M_COL(b,2)); 
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:33:29: note: in expansion of macro ‘M_COL’
+  rm[11] = dot4f(M_ROW(a,3), M_COL(b,2)); 
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:33:29: note: in expansion of macro ‘M_COL’
+  rm[11] = dot4f(M_ROW(a,3), M_COL(b,2)); 
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:33:29: note: in expansion of macro ‘M_COL’
+  rm[11] = dot4f(M_ROW(a,3), M_COL(b,2)); 
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:33:29: note: in expansion of macro ‘M_COL’
+  rm[11] = dot4f(M_ROW(a,3), M_COL(b,2)); 
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:35:17: note: in expansion of macro ‘M_ROW’
+  rm[12] = dot4f(M_ROW(a,0), M_COL(b,3));
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:35:17: note: in expansion of macro ‘M_ROW’
+  rm[12] = dot4f(M_ROW(a,0), M_COL(b,3));
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:35:17: note: in expansion of macro ‘M_ROW’
+  rm[12] = dot4f(M_ROW(a,0), M_COL(b,3));
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:35:17: note: in expansion of macro ‘M_ROW’
+  rm[12] = dot4f(M_ROW(a,0), M_COL(b,3));
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:35:29: note: in expansion of macro ‘M_COL’
+  rm[12] = dot4f(M_ROW(a,0), M_COL(b,3));
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:35:29: note: in expansion of macro ‘M_COL’
+  rm[12] = dot4f(M_ROW(a,0), M_COL(b,3));
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:35:29: note: in expansion of macro ‘M_COL’
+  rm[12] = dot4f(M_ROW(a,0), M_COL(b,3));
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:35:29: note: in expansion of macro ‘M_COL’
+  rm[12] = dot4f(M_ROW(a,0), M_COL(b,3));
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:36:17: note: in expansion of macro ‘M_ROW’
+  rm[13] = dot4f(M_ROW(a,1), M_COL(b,3));
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:36:17: note: in expansion of macro ‘M_ROW’
+  rm[13] = dot4f(M_ROW(a,1), M_COL(b,3));
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:36:17: note: in expansion of macro ‘M_ROW’
+  rm[13] = dot4f(M_ROW(a,1), M_COL(b,3));
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:36:17: note: in expansion of macro ‘M_ROW’
+  rm[13] = dot4f(M_ROW(a,1), M_COL(b,3));
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:36:29: note: in expansion of macro ‘M_COL’
+  rm[13] = dot4f(M_ROW(a,1), M_COL(b,3));
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:36:29: note: in expansion of macro ‘M_COL’
+  rm[13] = dot4f(M_ROW(a,1), M_COL(b,3));
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:36:29: note: in expansion of macro ‘M_COL’
+  rm[13] = dot4f(M_ROW(a,1), M_COL(b,3));
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:36:29: note: in expansion of macro ‘M_COL’
+  rm[13] = dot4f(M_ROW(a,1), M_COL(b,3));
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:37:17: note: in expansion of macro ‘M_ROW’
+  rm[14] = dot4f(M_ROW(a,2), M_COL(b,3));
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:37:17: note: in expansion of macro ‘M_ROW’
+  rm[14] = dot4f(M_ROW(a,2), M_COL(b,3));
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:37:17: note: in expansion of macro ‘M_ROW’
+  rm[14] = dot4f(M_ROW(a,2), M_COL(b,3));
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:37:17: note: in expansion of macro ‘M_ROW’
+  rm[14] = dot4f(M_ROW(a,2), M_COL(b,3));
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:37:29: note: in expansion of macro ‘M_COL’
+  rm[14] = dot4f(M_ROW(a,2), M_COL(b,3));
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:37:29: note: in expansion of macro ‘M_COL’
+  rm[14] = dot4f(M_ROW(a,2), M_COL(b,3));
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:37:29: note: in expansion of macro ‘M_COL’
+  rm[14] = dot4f(M_ROW(a,2), M_COL(b,3));
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:37:29: note: in expansion of macro ‘M_COL’
+  rm[14] = dot4f(M_ROW(a,2), M_COL(b,3));
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:38:17: note: in expansion of macro ‘M_ROW’
+  rm[15] = dot4f(M_ROW(a,3), M_COL(b,3)); 
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:38:17: note: in expansion of macro ‘M_ROW’
+  rm[15] = dot4f(M_ROW(a,3), M_COL(b,3)); 
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:38:17: note: in expansion of macro ‘M_ROW’
+  rm[15] = dot4f(M_ROW(a,3), M_COL(b,3)); 
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:38:17: note: in expansion of macro ‘M_ROW’
+  rm[15] = dot4f(M_ROW(a,3), M_COL(b,3)); 
+                 ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:38:29: note: in expansion of macro ‘M_COL’
+  rm[15] = dot4f(M_ROW(a,3), M_COL(b,3)); 
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:38:29: note: in expansion of macro ‘M_COL’
+  rm[15] = dot4f(M_ROW(a,3), M_COL(b,3)); 
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:38:29: note: in expansion of macro ‘M_COL’
+  rm[15] = dot4f(M_ROW(a,3), M_COL(b,3)); 
+                             ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:38:29: note: in expansion of macro ‘M_COL’
+  rm[15] = dot4f(M_ROW(a,3), M_COL(b,3)); 
+                             ^
+xform.c: In function ‘mulmatvec4f’:
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:45:16: note: in expansion of macro ‘M_COL’
+  rv[0] = dot4f(M_COL(a,0), M_ROW(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:45:16: note: in expansion of macro ‘M_COL’
+  rv[0] = dot4f(M_COL(a,0), M_ROW(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:45:16: note: in expansion of macro ‘M_COL’
+  rv[0] = dot4f(M_COL(a,0), M_ROW(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:45:16: note: in expansion of macro ‘M_COL’
+  rv[0] = dot4f(M_COL(a,0), M_ROW(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:45:28: note: in expansion of macro ‘M_ROW’
+  rv[0] = dot4f(M_COL(a,0), M_ROW(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:45:28: note: in expansion of macro ‘M_ROW’
+  rv[0] = dot4f(M_COL(a,0), M_ROW(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:45:28: note: in expansion of macro ‘M_ROW’
+  rv[0] = dot4f(M_COL(a,0), M_ROW(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:45:28: note: in expansion of macro ‘M_ROW’
+  rv[0] = dot4f(M_COL(a,0), M_ROW(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:46:16: note: in expansion of macro ‘M_COL’
+  rv[1] = dot4f(M_COL(a,1), M_ROW(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:46:16: note: in expansion of macro ‘M_COL’
+  rv[1] = dot4f(M_COL(a,1), M_ROW(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:46:16: note: in expansion of macro ‘M_COL’
+  rv[1] = dot4f(M_COL(a,1), M_ROW(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:46:16: note: in expansion of macro ‘M_COL’
+  rv[1] = dot4f(M_COL(a,1), M_ROW(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:46:28: note: in expansion of macro ‘M_ROW’
+  rv[1] = dot4f(M_COL(a,1), M_ROW(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:46:28: note: in expansion of macro ‘M_ROW’
+  rv[1] = dot4f(M_COL(a,1), M_ROW(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:46:28: note: in expansion of macro ‘M_ROW’
+  rv[1] = dot4f(M_COL(a,1), M_ROW(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:46:28: note: in expansion of macro ‘M_ROW’
+  rv[1] = dot4f(M_COL(a,1), M_ROW(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:47:16: note: in expansion of macro ‘M_COL’
+  rv[2] = dot4f(M_COL(a,2), M_ROW(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:47:16: note: in expansion of macro ‘M_COL’
+  rv[2] = dot4f(M_COL(a,2), M_ROW(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:47:16: note: in expansion of macro ‘M_COL’
+  rv[2] = dot4f(M_COL(a,2), M_ROW(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:47:16: note: in expansion of macro ‘M_COL’
+  rv[2] = dot4f(M_COL(a,2), M_ROW(b,0));
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:47:28: note: in expansion of macro ‘M_ROW’
+  rv[2] = dot4f(M_COL(a,2), M_ROW(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:47:28: note: in expansion of macro ‘M_ROW’
+  rv[2] = dot4f(M_COL(a,2), M_ROW(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:47:28: note: in expansion of macro ‘M_ROW’
+  rv[2] = dot4f(M_COL(a,2), M_ROW(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:47:28: note: in expansion of macro ‘M_ROW’
+  rv[2] = dot4f(M_COL(a,2), M_ROW(b,0));
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:23: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                       ^
+xform.c:48:16: note: in expansion of macro ‘M_COL’
+  rv[3] = dot4f(M_COL(a,3), M_ROW(b,0)); 
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:39: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                       ^
+xform.c:48:16: note: in expansion of macro ‘M_COL’
+  rv[3] = dot4f(M_COL(a,3), M_ROW(b,0)); 
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:55: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                       ^
+xform.c:48:16: note: in expansion of macro ‘M_COL’
+  rv[3] = dot4f(M_COL(a,3), M_ROW(b,0)); 
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:14:71: note: in expansion of macro ‘M_EL’
+ #define M_COL(rm,col) M_EL(rm,0,col), M_EL(rm,1,col), M_EL(rm,2,col), M_EL(rm,3,col)
+                                                                       ^
+xform.c:48:16: note: in expansion of macro ‘M_COL’
+  rv[3] = dot4f(M_COL(a,3), M_ROW(b,0)); 
+                ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:23: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                       ^
+xform.c:48:28: note: in expansion of macro ‘M_ROW’
+  rv[3] = dot4f(M_COL(a,3), M_ROW(b,0)); 
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:39: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                       ^
+xform.c:48:28: note: in expansion of macro ‘M_ROW’
+  rv[3] = dot4f(M_COL(a,3), M_ROW(b,0)); 
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:55: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                       ^
+xform.c:48:28: note: in expansion of macro ‘M_ROW’
+  rv[3] = dot4f(M_COL(a,3), M_ROW(b,0)); 
+                            ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:13:71: note: in expansion of macro ‘M_EL’
+ #define M_ROW(rm,row) M_EL(rm,row,0), M_EL(rm,row,1), M_EL(rm,row,2), M_EL(rm,row,3)
+                                                                       ^
+xform.c:48:28: note: in expansion of macro ‘M_ROW’
+  rv[3] = dot4f(M_COL(a,3), M_ROW(b,0)); 
+                            ^
+xform.c: In function ‘make_identity’:
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:53:5: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,0) = 1.0f;  M_EL(m,1,0) = 0.0f;  M_EL(m,2,0) = 0.0f;  M_EL(m,3,0) = 0.0f;
+     ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:53:26: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,0) = 1.0f;  M_EL(m,1,0) = 0.0f;  M_EL(m,2,0) = 0.0f;  M_EL(m,3,0) = 0.0f;
+                          ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:53:47: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,0) = 1.0f;  M_EL(m,1,0) = 0.0f;  M_EL(m,2,0) = 0.0f;  M_EL(m,3,0) = 0.0f;
+                                               ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:53:68: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,0) = 1.0f;  M_EL(m,1,0) = 0.0f;  M_EL(m,2,0) = 0.0f;  M_EL(m,3,0) = 0.0f;
+                                                                    ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:54:5: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,1) = 0.0f;  M_EL(m,1,1) = 1.0f;  M_EL(m,2,1) = 0.0f;  M_EL(m,3,1) = 0.0f;
+     ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:54:26: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,1) = 0.0f;  M_EL(m,1,1) = 1.0f;  M_EL(m,2,1) = 0.0f;  M_EL(m,3,1) = 0.0f;
+                          ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:54:47: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,1) = 0.0f;  M_EL(m,1,1) = 1.0f;  M_EL(m,2,1) = 0.0f;  M_EL(m,3,1) = 0.0f;
+                                               ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:54:68: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,1) = 0.0f;  M_EL(m,1,1) = 1.0f;  M_EL(m,2,1) = 0.0f;  M_EL(m,3,1) = 0.0f;
+                                                                    ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:55:5: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,2) = 0.0f;  M_EL(m,1,2) = 0.0f;  M_EL(m,2,2) = 1.0f;  M_EL(m,3,2) = 0.0f;
+     ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:55:26: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,2) = 0.0f;  M_EL(m,1,2) = 0.0f;  M_EL(m,2,2) = 1.0f;  M_EL(m,3,2) = 0.0f;
+                          ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:55:47: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,2) = 0.0f;  M_EL(m,1,2) = 0.0f;  M_EL(m,2,2) = 1.0f;  M_EL(m,3,2) = 0.0f;
+                                               ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:55:68: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,2) = 0.0f;  M_EL(m,1,2) = 0.0f;  M_EL(m,2,2) = 1.0f;  M_EL(m,3,2) = 0.0f;
+                                                                    ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:56:5: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,3) = 0.0f;  M_EL(m,1,3) = 0.0f;  M_EL(m,2,3) = 0.0f;  M_EL(m,3,3) = 1.0f;
+     ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:56:26: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,3) = 0.0f;  M_EL(m,1,3) = 0.0f;  M_EL(m,2,3) = 0.0f;  M_EL(m,3,3) = 1.0f;
+                          ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:56:47: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,3) = 0.0f;  M_EL(m,1,3) = 0.0f;  M_EL(m,2,3) = 0.0f;  M_EL(m,3,3) = 1.0f;
+                                               ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:56:68: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,3) = 0.0f;  M_EL(m,1,3) = 0.0f;  M_EL(m,2,3) = 0.0f;  M_EL(m,3,3) = 1.0f;
+                                                                    ^
+xform.c: In function ‘make_translate’:
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:62:2: note: in expansion of macro ‘M_EL’
+  M_EL(m,3,0) = x;
+  ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:63:2: note: in expansion of macro ‘M_EL’
+  M_EL(m,3,1) = y;
+  ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:64:2: note: in expansion of macro ‘M_EL’
+  M_EL(m,3,2) = z;
+  ^
+xform.c: In function ‘make_frustum’:
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:82:5: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,0) = x;     M_EL(m,1,0) = 0.0f;  M_EL(m,2,0) = a;      M_EL(m,3,0) = 0.0f;
+     ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:82:26: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,0) = x;     M_EL(m,1,0) = 0.0f;  M_EL(m,2,0) = a;      M_EL(m,3,0) = 0.0f;
+                          ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:82:47: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,0) = x;     M_EL(m,1,0) = 0.0f;  M_EL(m,2,0) = a;      M_EL(m,3,0) = 0.0f;
+                                               ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:82:69: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,0) = x;     M_EL(m,1,0) = 0.0f;  M_EL(m,2,0) = a;      M_EL(m,3,0) = 0.0f;
+                                                                     ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:83:5: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,1) = 0.0f;  M_EL(m,1,1) = y;     M_EL(m,2,1) = b;      M_EL(m,3,1) = 0.0f;
+     ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:83:26: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,1) = 0.0f;  M_EL(m,1,1) = y;     M_EL(m,2,1) = b;      M_EL(m,3,1) = 0.0f;
+                          ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:83:47: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,1) = 0.0f;  M_EL(m,1,1) = y;     M_EL(m,2,1) = b;      M_EL(m,3,1) = 0.0f;
+                                               ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:83:69: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,1) = 0.0f;  M_EL(m,1,1) = y;     M_EL(m,2,1) = b;      M_EL(m,3,1) = 0.0f;
+                                                                     ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:84:5: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,2) = 0.0f;  M_EL(m,1,2) = 0.0f;  M_EL(m,2,2) = c;      M_EL(m,3,2) = d;
+     ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:84:26: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,2) = 0.0f;  M_EL(m,1,2) = 0.0f;  M_EL(m,2,2) = c;      M_EL(m,3,2) = d;
+                          ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:84:47: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,2) = 0.0f;  M_EL(m,1,2) = 0.0f;  M_EL(m,2,2) = c;      M_EL(m,3,2) = d;
+                                               ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:84:69: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,2) = 0.0f;  M_EL(m,1,2) = 0.0f;  M_EL(m,2,2) = c;      M_EL(m,3,2) = d;
+                                                                     ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:85:5: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,3) = 0.0f;  M_EL(m,1,3) = 0.0f;  M_EL(m,2,3) = -1.0f;  M_EL(m,3,3) = 0.0f;
+     ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:85:26: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,3) = 0.0f;  M_EL(m,1,3) = 0.0f;  M_EL(m,2,3) = -1.0f;  M_EL(m,3,3) = 0.0f;
+                          ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:85:47: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,3) = 0.0f;  M_EL(m,1,3) = 0.0f;  M_EL(m,2,3) = -1.0f;  M_EL(m,3,3) = 0.0f;
+                                               ^
+xform.c:11:26: error: expected expression before ‘[’ token
+ #define M_EL(m,row,col)  [row*4+col]
+                          ^
+xform.c:85:69: note: in expansion of macro ‘M_EL’
+     M_EL(m,0,3) = 0.0f;  M_EL(m,1,3) = 0.0f;  M_EL(m,2,3) = -1.0f;  M_EL(m,3,3) = 0.0f;
+                                                                     ^
+Makefile:2: recipe for target 'all' failed
+make: *** [all] Error 1
